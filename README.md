@@ -34,7 +34,7 @@ Example:
 - The Lyrics.ovh API has an issue by which on occasion it will return empty strings for the given song with status 200, and making multiple request for an artist/song can also result in no lyrics being returned (open issue on GitHub https://github.com/NTag/lyrics.ovh/issues/10), thus to perform a lyrics search for all songs for a given artist is atleast  a 2 min wait between requests. Retrieval time is also very slow, for 25 songs can take up to 10 seconds. 
 - To try to get around above issues, I have limited the number of songs for each artists to 25 (anymore risks timeout of the request, and hitting request limits for the MusicBrainz API).
 - For songs where the Lyrcs.ovh API does not return the lyrics, the song is discarded.
-- The `average_lyrics` result for the artist is cached. The initial request will be slow but subsequent request for the same artist will be considerably faster.
+- The `average_lyrics` result for the artist is cached with a TTL of 1 hour. The initial request will be slow but subsequent request for the same artist will be considerably faster.
 
 ## Environment
 - Node v-14 - runtime
