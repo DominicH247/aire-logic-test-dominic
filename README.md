@@ -52,7 +52,7 @@ To run the project please ensure you have the following installed:
 - Docker-compose - https://docs.docker.com/compose/install/
 
 ## Running the project
-- cd into the `/api` directory of the project
+- cd into the root directory of the project
 - run `docker-compose up --build` to build and launch the node application container and redis container
 - to run the unit tests in the node application container run `docker exec -it <container id> npm run test`
 - to stop and remove the containers run `docker-compose down`
