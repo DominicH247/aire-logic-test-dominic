@@ -7,22 +7,23 @@ Example:
 -  GET - `http:localhost:3000/api/artist/:artist_name`
 -  example JSON resonse:
     ```
-    { "data" : {
-        "artist_name": "Plan B",
-        "songs_counted": 16,
-        "average_lyrics": 501.19,
-        "variance": 50322.4,
-        "standard_deviation": 224.33,
-         min: { 
-                title: 'some song title',
-                count: 111
-            },
-            max: {
-                title: 'another song title',
-                count: 999
-            }
+    {
+      "data": {
+        "artist_name": "Florence + the Machine",
+        "songs_counted": 20,
+        "average_lyrics": 297.85,
+        "variance": 8464.23,
+        "standard_deviation": 92,
+        "min": {
+          "title": "Bedroom Hymns",
+          "count": 191
+        },
+        "max": {
+          "title": "Delilah",
+          "count": 569
         }
-     } 
+      }
+    }
     ```
 - example 404 error for no matching artist - GET `http:localhost:3000/api/artist/khsrtzzz1ea`
     ```
@@ -54,8 +55,8 @@ To run the project please ensure you have the following installed:
 ## Running the project
 - ensure docker is running
 - cd into the root directory of the project
-- run `docker-compose up --build` to build and launch the node application container and redis container
+- run `docker-compose up --build` to build and launch the node application container and redis container. It will log to the `Listening on port 3000...`
 - to run the unit tests in the node application container run `docker exec -it <container id> npm run test`
 - to stop and remove the containers run `docker-compose down`
 
-Please let me know if you have any issues with running it! :-) 
+Please let me know if you have any issues with running it! :-)
