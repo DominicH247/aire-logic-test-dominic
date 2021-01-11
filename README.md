@@ -53,7 +53,8 @@ To run the project please ensure you have the following installed:
 - Docker-compose - https://docs.docker.com/compose/install/
 
 ## Running the project
-- ensure docker is running
+- check docker is running
+- the application runs on port 3000
 - cd into the root directory of the project
 - run `docker-compose up --build` to build and launch the node application container and redis container. It will log to the `Listening on port 3000...`
 - to run the unit tests in the node application container run `docker exec -it <container id> npm run test`
