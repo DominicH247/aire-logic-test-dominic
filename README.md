@@ -1,9 +1,9 @@
 # Fing Average Lyrics API - Dominic Hui
 
-For this tech test I have built a REST API with a single GET endpoint, which consumes the MusicBrainz API, to retrieve a list of tracks for the artist, and the Lyrics.ovh API to retrieve the lyrics for each of the songs. It then proceses the lyrics and returns the average lyrics.
+For this tech test I have built a REST API with a single GET endpoint which consumes the MusicBrainz API, to retrieve a list of tracks for the artist, and the Lyrics.ovh API to retrieve the lyrics for each of the songs. It then proceses the lyrics and returns the average lyrics and additional statistical data.
 
 Example:
-
+-  using Curl or an API client (insomina, postman etc.)
 -  GET - `http:localhost:3000/api/artist/:artist_name`
 -  example JSON resonse:
     ```
