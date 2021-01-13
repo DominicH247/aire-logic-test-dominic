@@ -47,7 +47,7 @@ Example:
 - axios - HTTP client
 - docker - containerisation
 
-## Prequsits 
+## Prerequisites 
 To run the project please ensure you have the following installed:
 - Docker - https://docs.docker.com/get-docker/
 - Docker-compose - https://docs.docker.com/compose/install/
